@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+}
+
+body{
+    width: 100%;
+    padding: 10px;
+    min-height: 100vh;
+   background-color: #212121;
+}
+.todo{
+    width: 100%;
+    max-width: 540px;
+    background-color: #fff;
+    margin:150px auto 20px;
+    padding: 40px 30px 40px 30px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px aliceblue;
+}
+h2{
+  color: rgb(161, 33, 197);
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  margin-bottom: 50px;
+  position: relative;
+}
+h2 img{
+    width: 30px;
+    position: absolute;
+    right: 0;
+
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    outline: 5px groove black;
+    outline-offset: 5px;
+    border: none;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgb(195, 243, 124);
+}
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-weight: 600;
+    font-size: 24px;
+    padding: 10px;
+}
+input::placeholder{
+    color: rgba(8, 212, 144, 0.886);
+}
+button{
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgba(9, 240, 240, 0.907);
+    background: #000000e0;
+    padding: 16px 30px;
+    border-radius: 40px;
+    cursor: pointer;
+    margin: 1px;
+}
+ul li{
+    list-style: none;
+    padding: 12px 8px 12px 50px;
+    letter-spacing: 1px;
+    font-size: 19px;
+    font-weight: 600;
+    margin-block: 10px;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+
+}
+ul li::before{
+    content: "";
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: url(./assests/unchecked.png);
+    background-size: cover;
+    position: center;
+    top: 12px;
+    left: 8px;
+}
+
+ul li.checked{
+    background: rgb(43, 7, 43);
+    border-radius: 50px;
+    color: aliceblue;
+
+}
+ul li.checked::before{
+    background: url(./assests/checked.png);
+    background-size: cover;
+}
+
+ul li span{
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    margin-right: 5px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 22px;
+    color: #000;
+    text-align: center;
+    border-radius: 50%;
+}
+ul li span:hover{
+    background: #000;
+    color: #fff;
+}
+
+ul li.checked span{
+    color: #fff;
+}
+ul li.checked span:hover{
+    background: #fff;
+    color: #000;
+}
