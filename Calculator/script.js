@@ -22,4 +22,23 @@ arr.forEach(button =>{
         input.value= string;
         }
     })
+
+    button.addEventListener('keydown',(e)=>{
+        if (e.key==='='||e.key==='Enter'){
+            string=eval(string);
+            input.value=string;
+        }
+        else if (e.key=== 'AC'){
+            string="";
+            input.value = string;
+        }
+        else if(e.key=== 'DEL'){
+            string=string.substring(0,string.length-1);
+            input.value = string;
+        }
+        else{
+        string += e.key;
+        input.value= string;
+        }
+    })
 })
