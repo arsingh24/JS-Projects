@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #a59729;
+    font-family: "Playwrite DE Grund", cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+.container{
+    background: floralwhite;
+    width: 500px;
+    height: 250px;
+    padding: 20px;
+    padding-left: 40px;
+    border-radius: 20px;
+    border: 3px solid #000;
+    text-align: center;
+}
+
+p{
+    font-size: 14px;
+   
+}
+.inputs{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.code{
+    width: 48px;
+    height: 60px;
+    font-size: 2.8rem;
+    text-align: center;
+    padding:10px ;
+    border: 2px solid #000;
+    margin: 5px;
+    border-radius: 5px;
+
+}
+.code::-webkit-outer-spin-button,
+.code::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.code:valid{
+    border: 2px solid green;
+    box-shadow: 0 0 5px green;
+}

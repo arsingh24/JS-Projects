@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.root{
+    --primary-color : #493904;
+}
+body{
+    background-color: #57d6eab8;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 10px; */
+}
+h2{
+    background-color: #fff;
+    padding: 3px 2px 5px ;
+    margin: 10px;
+    border-radius: 20px;
+}
+h2::before{
+    content: "© ";
+    margin-left:-20px ;
+}
+.container{
+    background-color: #6436a1;
+    width: 400px;
+    height: auto;
+    border-radius: 20px;
+    border: 2px solid aliceblue;
+    box-shadow: 0px 0px 50px #ffffff;
+    /* align-items: center; */
+    text-align: center;
+}
+.input{
+    background-color: #fff;
+    padding: 2px;
+    margin: 25px;
+    border-radius: 20px;
+}
+.inputBox{
+    outline: none;
+    color: var(--primary-color);
+    border-radius: 10px;
+    width: 250px;
+    font-size: 1rem;
+    text-align: center;
+    border: none;
+
+}
+
+button{
+    padding: 10px;
+    padding-left: 30px;
+    margin-right: -20px;
+    border: none;
+    text-align: start;
+    color: aquamarine;
+    border-radius: 20px;
+    background-color: rgb(1, 12, 8);
+    font-weight: 600;
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    list-style:none;
+    /* margin: 10px; */
+    padding: 10px;
+    gap: 15px;
+    text-align: start;
+}
+li{
+ font-size: 1.5rem;
+ font-weight: 600;
+ color: rgb(255, 213, 0);
+ padding: 12px 8px 10px 45px ;
+ position: relative;
+
+}
+li::before{
+    content: "";
+   position: absolute;
+   height: 28px;
+   width: 28px;
+   border-radius: 50%;
+   background: url(./record-stroke-rounded\ \(1\).svg);   
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+
+}
+ul li.checked{
+    text-decoration: line-through;
+    background: #bd2b2b;
+    border-radius: 20px;
+}
+ul li.checked::before{
+ background: url(./checkmark-circle-03-stroke-rounded.svg);
+ background-position: center;
+ background-size: cover;
+}
+
+.msg{
+    font-size: 1rem;
+    color: aliceblue;
+    padding: 6px;
+    margin-left: 10px;
+    text-align: center;
+    background-color: #000;
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 10x;
+    width: 30px;
+    height: 40px;
+    font-weight: 600;
+
+}

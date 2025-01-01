@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClickAudio</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: #f1c668;
+            /* height: 100vh; */
+        }
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            /* background-color: #fff; */
+        }
+        @media screen and (max-width:500px) {
+            .container{
+            flex-direction: column;
+        }
+        }
+        @media screen and (max-width:500px) {
+        button{
+         color: aqua;
+         background-color: #000;
+         padding-left: 20px;
+        }
+        }
+        
+
+        button{
+            padding: 10px;
+            margin: 10px;
+            border: none;
+            border-radius: 10px;
+            font-size: 1rem;
+            font-weight: 600;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            cursor: pointer;
+
+        }
+
+    </style>
+</head>
+<body>
+    <audio src="./audio/applause.mp3" id="audio-applause"></audio>
+    <audio src="./audio/jai-shree-ram-notification-ringtone-tone-60275.mp3"  id="audio-jsr"></audio>
+    <audio src="./audio/jagdamb.mp3" id="audio-jagdamb"></audio>
+    <audio src="./audio/good-morning-1-8967.mp3" id="audio-gdmrng"></audio>
+    <audio src="./audio/sitaram.mp3" id="audio-sitaram"></audio>
+
+    <div class="container">
+        <button id="jaishriram">Jai Shri Ram</button>
+        <button id="jagdambh">Jagdambh</button>
+        <button id="sitaram">Sita Ram</button>
+        <button id="applause">Applause</button>
+        <button id="goodmrng">Good Morning</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

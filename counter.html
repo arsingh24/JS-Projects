@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Counter App</title>
+   <style>
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding:0;
+
+    }
+    body{
+        background-color: bisque;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: aliceblue;
+    }
+
+
+    .box{
+        margin-top: 40vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: gray;
+        width: 200px;
+        gap: 20px;
+        padding: 10px;
+        border-radius: 1.5rem;
+    }
+    .word{
+        /* margin-top: 30vh; */
+        
+        background-color: gray;
+        width: 200px;
+        /* gap: 20px; */
+        padding: 10px;
+        text-align: center;
+        border-radius: 1.5rem;
+    }
+    button{
+        background-color: transparent;
+        font-size: 2rem;
+        padding: 2px;
+        outline: none;
+        /* margin: 2px; */
+        color: aliceblue;
+        border: none;
+    }
+   </style>
+</head>
+<body>
+    <div class="word">
+        <h3>Counter App by Js</h3>
+    </div>
+   <div class="box">
+    <button id="plus">+</button>
+    <h2 id="text">0</h2>
+    <button id="minus">-</button>
+   </div> 
+</body>
+<script>
+    const increase = document.getElementById("plus");
+    const decrease = document.getElementById("minus");
+    const num = document.querySelector("#text");
+
+    let count = 0;
+    // let update = count;
+    increase.addEventListener("click",()=>{
+        count++;
+        update();
+        console.log("helli")
+        console.log(count)
+    })
+
+    function update(){
+        num.textContent =count;
+    }
+
+    decrease.addEventListener("click",()=>{
+        count--;
+        update();
+    })
+</script>
+</html>
